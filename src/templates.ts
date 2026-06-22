@@ -55,35 +55,32 @@ export const githubReleaseYml = `name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
+
+permissions:
+  contents: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      id-token: write
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
-          fetch-depth: 0
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-      - uses: pnpm/action-setup@v5
-      - uses: actions/setup-node@v5
+          version: 9
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: pnpm
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install
       - run: pnpm build
-      - name: Create GitHub Release from changelog
+      - name: Extract changelog for this version
         run: |
-          sed -n '/^## v/,/^## v/p' CHANGELOG.md | sed '$d' > .release-notes.md
-          gh release create "\${{ github.ref_name }}" --notes-file .release-notes.md
-        env:
-          GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          VERSION="\${GITHUB_REF#refs/tags/v}"
+          awk -v ver="$VERSION" '/^## v/{if(seen) exit; if($0 ~ "^## v" ver "$") seen=1} seen' CHANGELOG.md > release_body.md
+      - uses: softprops/action-gh-release@v2
+        with:
+          body_path: release_body.md
 `;
 
 export const oxlintrcJson = JSON.stringify(
