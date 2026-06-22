@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.1.2
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.1.1...v0.1.2)
+
+### 🩹 Fixes
+
+- Scaffold full foundation project ([0f71e1c](https://github.com/ilyeshdz/create-ts-plate/commit/0f71e1c))
+
+### 📖 Documentation
+
+- Add README ([3416de9](https://github.com/ilyeshdz/create-ts-plate/commit/3416de9))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.1.1
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.1.0...v0.1.1)
