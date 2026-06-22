@@ -2,6 +2,14 @@
   "name": "create-ts-plate",
   "version": "0.3.7",
   "description": "CLI to scaffold new projects using @ilyeshdz/ts-plate",
+  "homepage": "https://github.com/ilyeshdz/create-ts-plate#readme",
+  "bugs": {
+    "url": "https://github.com/ilyeshdz/create-ts-plate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ilyeshdz/create-ts-plate.git"
+  },
   "bin": {
     "create-ts-plate": "./dist/index.mjs"
   },
