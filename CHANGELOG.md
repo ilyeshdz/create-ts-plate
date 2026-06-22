@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.3.7
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.6...v0.3.7)
+
+### 🩹 Fixes
+
+- Update inquirer to v14 ([4ca0df9](https://github.com/ilyeshdz/create-ts-plate/commit/4ca0df9))
+
+### 📖 Documentation
+
+- Update README to reflect actual prompts and generated structure ([ddb2fde](https://github.com/ilyeshdz/create-ts-plate/commit/ddb2fde))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.6
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.5...v0.3.6)
