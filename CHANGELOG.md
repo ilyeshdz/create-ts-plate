@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.5
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.4...v0.3.5)
+
+### 🏡 Chore
+
+- Fix formatting in release.yml ([5c261a0](https://github.com/ilyeshdz/create-ts-plate/commit/5c261a0))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.4
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.3...v0.3.4)
