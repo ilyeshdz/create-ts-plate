@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.4
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.3...v0.3.4)
+
+### 🩹 Fixes
+
+- Use softprops/action-gh-release with awk changelog extraction ([ff8e598](https://github.com/ilyeshdz/create-ts-plate/commit/ff8e598))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.3
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.1...v0.3.3)

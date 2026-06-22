@@ -1,6 +1,6 @@
 {
   "name": "create-ts-plate",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "CLI to scaffold new projects using @ilyeshdz/ts-plate",
   "bin": {
     "create-ts-plate": "./dist/index.mjs"
