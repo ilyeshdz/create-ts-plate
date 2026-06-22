@@ -50,5 +50,6 @@
     "*.{json,md,yaml}": [
       "oxfmt"
     ]
-  }
+  },
+  "packageManager": "pnpm@11.6.0"
 }
