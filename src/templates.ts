@@ -39,9 +39,9 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+       - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: pnpm
@@ -78,7 +78,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
-      - run: npx changelogen@latest gh release
+      - name: Create GitHub Release from changelog
+        run: |
+          sed -n '/^## v/,/^## v/p' CHANGELOG.md | sed '$d' > .release-notes.md
+          gh release create "\${{ github.ref_name }}" --notes-file .release-notes.md
         env:
           GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
 `;
