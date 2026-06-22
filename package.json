@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@ilyeshdz/ts-plate": "^0.5.1",
-    "inquirer": "^12.0.0",
+    "inquirer": "^14.0.2",
     "listr": "^0.14.3"
   },
   "devDependencies": {
