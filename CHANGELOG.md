@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.8
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.7...v0.3.8)
+
+### 🚀 Enhancements
+
+- Add repository, bugs, and homepage fields to package.json ([ce58246](https://github.com/ilyeshdz/create-ts-plate/commit/ce58246))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.7
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.6...v0.3.7)
