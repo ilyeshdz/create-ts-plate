@@ -52,6 +52,17 @@ async function main() {
       },
     },
     {
+      title: 'Setting up git repository',
+      task: async () => {
+        const { execSync } = await import('node:child_process');
+        try {
+          execSync('git init', { cwd: projectName, stdio: 'pipe' });
+        } catch {
+          // git not available
+        }
+      },
+    },
+    {
       title: 'Installing dependencies',
       skip: () => (!answers.install ? 'Skipping installation' : undefined),
       task: async () => {
@@ -60,15 +71,14 @@ async function main() {
       },
     },
     {
-      title: 'Setting up git repository',
+      title: 'Committing initial files',
       task: async () => {
         const { execSync } = await import('node:child_process');
         try {
-          execSync('git init', { cwd: projectName, stdio: 'pipe' });
           execSync('git add .', { cwd: projectName, stdio: 'pipe' });
           execSync('git commit -m "chore: initial commit"', { cwd: projectName, stdio: 'pipe' });
         } catch {
-          // git not available or already a repo
+          // git not available
         }
       },
     },
