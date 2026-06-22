@@ -77,9 +77,6 @@ jobs:
       - run: npx changelogen@latest gh release
         env:
           GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}
-      - run: pnpm publish
-        env:
-          NODE_AUTH_TOKEN: \${{ secrets.NPM_TOKEN }}
 `;
 
 export const oxlintrcJson = JSON.stringify(
