@@ -2,6 +2,9 @@
 
 CLI to scaffold new projects using [@ilyeshdz/ts-plate](https://ilyeshdz.github.io/ts-plate/).
 
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/version/create-ts-plate)](https://npmx.dev/package/create-ts-plate)
+[![Open on npmx.dev](https://npmx.dev/api/registry/badge/size/create-ts-plate)](https://npmx.dev/package/create-ts-plate)
+
 ## Usage
 
 ```bash
