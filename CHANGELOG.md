@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.6
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.5...v0.3.6)
+
+### 🩹 Fixes
+
+- Remove pnpm version mismatch in release workflow ([5b5d40b](https://github.com/ilyeshdz/create-ts-plate/commit/5b5d40b))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.5
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.4...v0.3.5)
