@@ -23,7 +23,7 @@ async function main() {
 
   const answers = await inquirer.prompt<{ formatter: FormatterChoice; install: boolean }>([
     {
-      type: 'list',
+      type: 'select',
       name: 'formatter',
       message: 'Choose formatter / linter:',
       choices: [
