@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.9
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.8...v0.3.9)
+
+### 🩹 Fixes
+
+- Replace inquirer 'list' with 'select' prompt type ([02bfcb4](https://github.com/ilyeshdz/create-ts-plate/commit/02bfcb4))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.8
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.7...v0.3.8)
