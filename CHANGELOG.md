@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.10
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.9...v0.3.10)
+
+### 🩹 Fixes
+
+- Run git init before pnpm install so husky prepare script works ([dbfacd2](https://github.com/ilyeshdz/create-ts-plate/commit/dbfacd2))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.9
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.8...v0.3.9)
