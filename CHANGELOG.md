@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.3.3
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.1...v0.3.3)
+
+### 🩹 Fixes
+
+- Use CHANGELOG.md content in GitHub release page ([3bf5cb4](https://github.com/ilyeshdz/create-ts-plate/commit/3bf5cb4))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
+## v0.3.2
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.1...v0.3.2)
+
+### 🩹 Fixes
+
+- Use CHANGELOG.md content in GitHub release page ([3bf5cb4](https://github.com/ilyeshdz/create-ts-plate/commit/3bf5cb4))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.3.1
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.0...v0.3.1)
