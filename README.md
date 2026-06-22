@@ -20,33 +20,50 @@ pnpm create ts-plate
 You'll be prompted for:
 
 - **Project name** (or pass as argument)
-- **TypeScript** — add TypeScript support
-- **Vitest** — set up testing
-- **CLI tool** — scaffold as a CLI binary
+- **Formatter / linter** — choose between Oxlint+Oxfmt, ESLint+Prettier, or Biome
 - **Install dependencies** — run `pnpm install` after generation
 
 ## What it generates
 
 ```
 <project-name>
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── release.yml
+├── .husky/
+│   └── pre-commit
+├── .vscode/
+│   └── settings.json
+├── src/
+│   └── index.ts
+├── tests/
+│   └── index.test.ts
 ├── .gitignore
 ├── README.md
 ├── package.json
-├── tsconfig.json        (if TypeScript)
-├── src/
-│   └── index.ts
-└── tests/
-    └── index.test.ts    (if vitest)
+├── tsconfig.json
+├── tsdown.config.ts
+├── vitest.config.ts
+├── oxlintrc.json          (if Oxlint+Oxfmt)
+├── .oxfmtrc.json          (if Oxlint+Oxfmt)
+├── eslint.config.js       (if ESLint+Prettier)
+├── .prettierrc            (if ESLint+Prettier)
+└── biome.json             (if Biome)
 ```
 
 ## Development
 
 ```bash
-pnpm dev      # watch mode
-pnpm build   # build for production
-pnpm lint    # run oxlint
-pnpm fmt     # format with oxfmt
-pnpm check   # lint + format check + build
+pnpm dev          # watch mode
+pnpm build        # build for production
+pnpm test         # run tests
+pnpm test:watch   # watch mode tests
+pnpm lint         # run linter
+pnpm lint:fix     # fix lint issues
+pnpm fmt          # format code
+pnpm fmt:check    # check formatting
+pnpm check        # lint + fmt check + test + build
 ```
 
 ## Release
