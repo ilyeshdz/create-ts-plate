@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.2.1
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.2.0...v0.2.1)
+
+### 🏡 Chore
+
+- Remove pnpm publish from release workflow ([4dbaa21](https://github.com/ilyeshdz/create-ts-plate/commit/4dbaa21))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.1.3
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.1.2...v0.1.3)
