@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.1
+
+[compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.3.0...v0.3.1)
+
+### 🩹 Fixes
+
+- Add Git user config in release workflow and remove pnpm publish ([deff727](https://github.com/ilyeshdz/create-ts-plate/commit/deff727))
+
+### ❤️ Contributors
+
+- Ilyes Hernandez ([@ilyeshdz](https://github.com/ilyeshdz))
+
 ## v0.2.1
 
 [compare changes](https://github.com/ilyeshdz/create-ts-plate/compare/v0.2.0...v0.2.1)
