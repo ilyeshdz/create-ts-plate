@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - '@ilyeshdz/ts-plate@0.5.1'

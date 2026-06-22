@@ -1,0 +1,53 @@
+{
+  "name": "create-ts-plate",
+  "version": "0.0.0",
+  "description": "CLI to scaffold new projects using @ilyeshdz/ts-plate",
+  "bin": {
+    "create-ts-plate": "./dist/index.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint --fix .",
+    "fmt": "oxfmt .",
+    "fmt:check": "oxfmt --check .",
+    "check": "oxlint . && oxfmt --check . && tsdown",
+    "release": "changelogen --release",
+    "release:minor": "changelogen --release --minor",
+    "release:major": "changelogen --release --major",
+    "release:patch": "changelogen --release --patch",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@ilyeshdz/ts-plate": "^0.5.1",
+    "inquirer": "^12.0.0",
+    "listr": "^0.14.3"
+  },
+  "devDependencies": {
+    "changelogen": "^0.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.8",
+    "oxfmt": "^0.55.0",
+    "oxlint": "^1.70.0",
+    "tsdown": "^0.22.0",
+    "typescript": "^6.0.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,mjs,mts,cjs,cts}": [
+      "oxlint --fix",
+      "oxfmt"
+    ],
+    "*.{json,md,yaml}": [
+      "oxfmt"
+    ]
+  }
+}
